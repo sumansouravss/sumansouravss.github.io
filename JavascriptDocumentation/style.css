@@ -1,0 +1,224 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+
+  background: linear-gradient(
+      rgba(15, 23, 42, 0.92),
+      rgba(15, 23, 42, 0.92)
+    ),
+    url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4")
+      no-repeat center center/cover;
+
+  background-attachment: fixed;
+  background-size: cover;
+  color: #f1f5f9;
+
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+header {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+  overflow-y: auto;
+}
+
+/* Navigation Title */
+nav h1 {
+  font-size: 28px;
+  font-weight: 600;
+
+  padding: 25px;
+
+  color: #38bdf8;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Navigation Links */
+nav ul {
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #e2e8f0;
+}
+
+nav ul li {
+  padding: 18px 25px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+nav ul li:hover {
+  background: #38bdf8;
+  color: #0f172a;
+
+  padding-left: 35px;
+}
+
+/* Main Content */
+main {
+  margin-left: 320px;
+  padding: 50px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 60px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  padding: 35px;
+
+  border-radius: 16px;
+
+  backdrop-filter: blur(6px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Heading */
+section h2 {
+  font-size: 36px;
+  font-weight: 600;
+
+  margin-bottom: 25px;
+
+  color: #38bdf8;
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+  padding-bottom: 10px;
+}
+
+/* Article Styling */
+section article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  font-size: 16px;
+}
+
+/* Paragraphs & Lists */
+section p,
+section li {
+  font-size: 17px;
+  line-height: 1.8;
+
+  color: #e2e8f0;
+}
+
+/* Lists */
+section ul {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+section article ul li {
+  margin-bottom: 10px;
+}
+
+/* Code Blocks */
+code {
+  display: block;
+
+  white-space: pre-line;
+
+  background: #0f172a;
+
+  color: #38bdf8;
+
+  padding: 20px;
+
+  margin: 20px 0;
+
+  border-radius: 10px;
+
+  overflow-x: auto;
+
+  line-height: 1.8;
+
+  font-size: 15px;
+
+  border-left: 4px solid #38bdf8;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #38bdf8;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  header {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  nav h1 {
+    text-align: center;
+  }
+
+  main {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  section p,
+  section li {
+    font-size: 15px;
+  }
+}
